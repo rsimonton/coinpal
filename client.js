@@ -45,11 +45,11 @@ userApis.forEach(api => {
 			}
 			else {
 				if(args.filter) {
-					console.log("\t" + name + ': ' + data[0][args.filter]);
+					console.log("\t" + data[0].symbol + ': ' + data[0][args.filter]);
 				}
 				else {
 	 				// parsed response body as js object 
-	    			console.log(name + ': ' + JSON.stringify(data, null, indent) + sep);
+	    			console.log(data[0].symbol + ': ' + JSON.stringify(data, null, indent) + sep);
 	    		}
 	    	}
 	    });
